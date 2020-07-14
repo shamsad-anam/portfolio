@@ -1,0 +1,72 @@
+.mynav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  //   border-bottom: 1px solid $color-tart;
+  //   display: inline-block;
+  width: 100%;
+  background-color: $color-blue-dark;
+  z-index: 111;
+  //   padding: 0.5rem 0;
+
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+  .container {
+    @include respondBetween(0px, 450px) {
+      max-width: 100%;
+    }
+  }
+  @include respondMax(767px) {
+    top: unset;
+    bottom: 0;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  &__menu {
+    background-color: $color-blue-dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    background-color: transparent;
+    transition: all 0.4s ease-out;
+    &:not(:last-child) {
+      margin-right: 2rem;
+      @include respondBetween(0px, 375px) {
+        margin-right: 5px;
+      }
+    }
+    &.active {
+      background-color: $color-secondary;
+    }
+    &.active span,
+    &.active ion-icon {
+      color: $color-primary;
+    }
+  }
+  &__links {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respondMax(991px) {
+      flex-direction: column;
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+
+    & ion-icon {
+      font-size: 2.5rem;
+      margin-right: 1rem;
+      @include respondMax(991px) {
+        font-size: 2rem;
+        margin-right: 0rem;
+      }
+      @include respondMax(575px) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

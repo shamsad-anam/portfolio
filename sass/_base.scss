@@ -1,0 +1,64 @@
+// variables
+
+$color-primary: #03071e;
+// $color-primary: #081043;
+
+// $color-secondary: #dc2f02;
+// $color-secondary: #f48c06;
+$color-secondary: #faa307;
+
+$color-tart: #f48c06;
+$color-fort: #2b9348;
+$color-fort-light: #12af3e;
+
+$color-text-light: #fff;
+$color-text-dark: #000;
+
+$color-blue-dark: #001233;
+$color-blue-light: #414f9d;
+$color-green: #02c39a;
+$color-light-1: #e5e5e5;
+$color-light-2: #e2e1ed;
+// $color-blue-light: $color-secondary;
+
+$color-html: #f16524;
+$color-css: #3c9cd7;
+$color-js: $color-secondary;
+$color-psd: #31c5f0;
+$color-respond: #6f43a2;
+$color-respond-light: #9754e2;
+$color-wp: #21759b;
+
+$img-size: 13rem;
+
+// @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Reenie+Beanie&display=swap");
+html {
+  font-size: 62.5%;
+  @include respondMax(575px) {
+    font-size: 50%;
+  }
+  scroll-behavior: smooth;
+  transition: all 0.2s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e5e5e5;
+}
+
+// .container.main {
+//   // padding: 3rem 5rem;
+// }
+
+.case {
+  max-width: 80%;
+  margin: 0 auto;
+}
