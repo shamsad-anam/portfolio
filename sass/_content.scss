@@ -24,6 +24,10 @@
 
     padding: 5rem 0;
 
+    // needed as smoothscroll.js adds border to sections
+    &:focus {
+      border: none !important;
+    }
     & .container {
       max-width: 100rem;
       margin: 0 auto;

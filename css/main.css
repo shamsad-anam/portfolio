@@ -3,9 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Reenie+Beanie&display=swap");
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 
 @media only screen and (max-width: 575px) {
@@ -24,6 +21,10 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: #e5e5e5;
+}
+
+:focus {
+  outline: none !important;
 }
 
 .case {
@@ -144,9 +145,9 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .mynav__item {
@@ -176,7 +177,7 @@ ul {
 
 .mynav__links {
   font-size: 1.8rem;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,16 +205,16 @@ ul {
   margin-right: 1rem;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
   .mynav__links ion-icon {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-right: 0rem;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .mynav__links ion-icon {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 
@@ -222,6 +223,10 @@ ul {
   margin-top: 7rem;
   border-radius: 3rem;
   background-color: #03071e;
+}
+
+.header:focus {
+  outline: none !important;
 }
 
 @media only screen and (max-width: 991px) {
@@ -410,6 +415,13 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding: 5rem 0;
+}
+
+.main .port:focus,
+.main .contact:focus,
+.main .about:focus,
+.main .skill:focus {
+  border: none !important;
 }
 
 .main .port .container,
