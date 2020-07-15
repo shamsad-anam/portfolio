@@ -306,6 +306,7 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  color: #fff;
 }
 
 @media only screen and (max-width: 767px) {

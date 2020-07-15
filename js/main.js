@@ -15,7 +15,7 @@
 //copyright year
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
-//nav animation on bigger screen
+// //nav animation on bigger screen
 if (screen.availWidth > 767) {
   (window.onscroll = function () {
     // console.log(document.documentElement.scrollTop);
