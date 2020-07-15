@@ -66,3 +66,19 @@ body {
   max-width: 80%;
   margin: 0 auto;
 }
+
+.js-transparent {
+  background-color: transparent !important;
+}
+.js-transparent-some {
+  background-color: rgba(0, 18, 51, 0.8) !important;
+}
+
+.js-link-sm {
+  font-size: 1.8rem !important;
+  padding: 1rem !important;
+}
+
+.js-icon-sm {
+  font-size: 1.8rem !important;
+}

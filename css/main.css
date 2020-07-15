@@ -32,6 +32,23 @@ body {
   margin: 0 auto;
 }
 
+.js-transparent {
+  background-color: transparent !important;
+}
+
+.js-transparent-some {
+  background-color: rgba(0, 18, 51, 0.8) !important;
+}
+
+.js-link-sm {
+  font-size: 1.8rem !important;
+  padding: 1rem !important;
+}
+
+.js-icon-sm {
+  font-size: 1.8rem !important;
+}
+
 a,
 a:active,
 a:visited,
@@ -120,6 +137,8 @@ ul {
   z-index: 111;
   -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 450px) {
@@ -148,6 +167,8 @@ ul {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .mynav__item {
@@ -187,6 +208,8 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media only screen and (max-width: 991px) {
@@ -203,6 +226,8 @@ ul {
 .mynav__links ion-icon {
   font-size: 2.5rem;
   margin-right: 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media only screen and (max-width: 767px) {
