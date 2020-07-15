@@ -40,13 +40,6 @@
         margin-right: 5px;
       }
     }
-    &.active {
-      background-color: $color-secondary;
-    }
-    &.active span,
-    &.active ion-icon {
-      color: $color-primary;
-    }
   }
   &__links {
     font-size: 1.8rem;
@@ -56,6 +49,15 @@
     align-items: center;
 
     transition: all 0.3s;
+
+    &.active {
+      background-color: $color-secondary;
+    }
+
+    &.active span,
+    &.active ion-icon {
+      color: $color-primary;
+    }
 
     @include respondMax(991px) {
       flex-direction: column;

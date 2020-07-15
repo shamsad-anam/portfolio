@@ -187,15 +187,6 @@ ul {
   }
 }
 
-.mynav__item.active {
-  background-color: #faa307;
-}
-
-.mynav__item.active span,
-.mynav__item.active ion-icon {
-  color: #03071e;
-}
-
 .mynav__links {
   font-size: 1.8rem;
   padding: 1.5rem 2rem;
@@ -210,6 +201,15 @@ ul {
           align-items: center;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.mynav__links.active {
+  background-color: #faa307;
+}
+
+.mynav__links.active span,
+.mynav__links.active ion-icon {
+  color: #03071e;
 }
 
 @media only screen and (max-width: 991px) {
